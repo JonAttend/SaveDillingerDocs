@@ -1,5 +1,67 @@
 # Git FLow
-## _Test2_
+## Commandes générales Git
+
+### Récupérer un repo
+`git clone <my-url-project>`
+```js
+Cloning into `<my-url-project>`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```  
+### Savoir le statut de notre suivi Git
+`git status`
+>👇 Si vous en 'avance' par rapport à la branch en remote
+```js
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+(use "git add <file>..." to update what will be committed)
+(use "git restore <file>..." to discard changes in working directory)
+        modified:   graph.js
+        modified:   public/stylesheets/style.css
+        modified:   routes/drive.js
+        modified:   views/drive.hbs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+>👇 Si vous êtes à jour
+```js
+On branch develop
+Your branch is up to date with 'origin/develop'.
+
+nothing to commit, working tree clean
+```  
+
+### Récupérer un repo
+`git clone <my-url-project>`
+```js
+Cloning into `<my-url-project>`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```  
+
+ => git status
+
+Lister toutes les branchs 
+en local : git branch
+en remote (distante) :  git branch -r
+les deux : git branch -a
+Créer une nouvelle branch => git checkout -b my-branch-name
+Switch de Branch sur notre repo en local => git checkout my-branch-name
+Switch vers une Branch sur un repo distant
+faire un Git Pull pour être à jour avant
+git checkout --track origin/my-branch-name
+Supprimer une Branch
+en remote (distante) : git push origin --delete my-branch-name
+en local : git branch -d my-branch-name
+
+
+ca marche ????? FEZFZEEZF
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
