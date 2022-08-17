@@ -36,14 +36,14 @@ nothing to commit, working tree clean
 ```  
 
 ### Lister toutes les branches
-Local
+Local  
 `git branch`
 >👇 A noter que la branch sur laquelle on se trouve est signalée d'un *
 ```js
 * develop
 main
 ```  
-Remote
+Remote  
 `git branch -r`
 >👇 **origin** n'est pas le nom du référentiel distant. Il s'agit plutôt d'un alias **local** défini comme clé à la place de l'URL du référentiel distant.
 Cela évite à l'utilisateur d'avoir à taper l'intégralité de l'URL distante lorsqu'il demande un push
@@ -101,13 +101,13 @@ Remote
 Switched to branch '<my-branch-name>'
 ```  
 ### Supprimer une branche
-Local
+Local  
 `git checkout <my-branch-name>`
 >👇 A noter que checkout s'exécute avec l'option **-d**
 ```js
 Deleted branch <my-branch-name> (was f187012).
 ```  
-Remote
+Remote  
 `git push origin --delete <my-branch-name>`
 >☝️ UNIQUEMENT dans le cas ou l'on push une branche qu'on ne voulait pas envoyer sur le dépôt distant !
 
