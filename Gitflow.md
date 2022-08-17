@@ -118,7 +118,7 @@ Local
 Switched to branch '<my-branch-name>'
 ```  
 Remote  
-`Git Pull`
+`Git Pull`  
 `git checkout --track origin <my-branch-name>`
 >👇 A noter que c'est plutôt rare de vouloir récupérer une branche qui n'est pas au même niveau depuis le dépôt distant.
 ```js
@@ -140,14 +140,14 @@ Remote
 ## Bonnes pratiques
 
 ### Faire une User Story
-`git pull` => MAJ du dépôt
-`git checkout develop`  => On va sur la branche **'develop'**
-`git checkout -b <my-new-branch-name>`  => On créer une nouvelle branche
+`git pull` => MAJ du dépôt  
+`git checkout develop`  => On va sur la branche **'develop'**  
+`git checkout -b <my-new-branch-name>`  => On créer une nouvelle branche  
 
 ### Faire une Pull Request
-`git pull` => MAJ du dépôt
-`git checkout develop`  => On va sur la branche **'develop'**
-`git checkout -b <my-new-branch-name>`  => On créer une nouvelle branche
+`git pull` => MAJ du dépôt  
+`git checkout develop`  => On va sur la branche **'develop'**  
+`git checkout -b <my-new-branch-name>`  => On créer une nouvelle branche  
 
 
 
