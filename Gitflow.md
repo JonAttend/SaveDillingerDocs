@@ -35,14 +35,29 @@ Your branch is up to date with 'origin/develop'.
 nothing to commit, working tree clean
 ```  
 
-### Récupérer un repo
-`git clone <my-url-project>`
+### Lister toutes les branches
+Local
+`git branch`
 ```js
-Cloning into `<my-url-project>`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
+* develop
+main
+```  
+Remote
+`git branch -r`
+>👇 A noter que lorsqu'on regarde des branchs sur un dépôt distant, elles sont commencent toutes par le préfix **origin/**
+```js
+origin/24431_menu_section
+origin/24438_add_authentification
+origin/24697_jquery_not_working_bug
+origin/24768_add_auth_page-revert-from-develop
+origin/24779_index_template_for_project_groups
+origin/24796_generate_index_template
+origin/25056_sort_data_json
+origin/25081_clean_html
+origin/25115_add_filter_searchbar
+origin/HEAD -> origin/main
+origin/develop
+origin/main
 ```  
 
  => git status
