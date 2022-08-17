@@ -1,7 +1,7 @@
 # Git FLow
 ## Commandes générales Git
 
-### Récupérer un repo
+### Récupérer un dépôt distant
 `git clone <my-url-project>`
 ```js
 Cloning into `<my-url-project>`...
@@ -38,13 +38,15 @@ nothing to commit, working tree clean
 ### Lister toutes les branches
 Local
 `git branch`
+>👇 A noter que la branch sur laquelle on se trouve est signalée d'un *
 ```js
 * develop
 main
 ```  
 Remote
 `git branch -r`
->👇 A noter que lorsqu'on regarde des branchs sur un dépôt distant, elles sont commencent toutes par le préfix **origin/**
+>👇 **origin** n'est pas le nom du référentiel distant. Il s'agit plutôt d'un alias **local** défini comme clé à la place de l'URL du référentiel distant.
+Cela évite à l'utilisateur d'avoir à taper l'intégralité de l'URL distante lorsqu'il demande un push
 ```js
 origin/24431_menu_section
 origin/24438_add_authentification
@@ -59,24 +61,55 @@ origin/HEAD -> origin/main
 origin/develop
 origin/main
 ```  
-
- => git status
-
-Lister toutes les branchs 
-en local : git branch
-en remote (distante) :  git branch -r
-les deux : git branch -a
-Créer une nouvelle branch => git checkout -b my-branch-name
-Switch de Branch sur notre repo en local => git checkout my-branch-name
-Switch vers une Branch sur un repo distant
-faire un Git Pull pour être à jour avant
-git checkout --track origin/my-branch-name
-Supprimer une Branch
-en remote (distante) : git push origin --delete my-branch-name
-en local : git branch -d my-branch-name
-
-
-ca marche ????? FEZFZEEZF
+ Local + Remote
+`git branch -a`
+>👇 A noter que les branchs distantes commencent par **remote**
+ ```js
+* develop
+ main
+remotes/origin/24431_menu_section
+remotes/origin/24438_add_authentification
+remotes/origin/24697_jquery_not_working_bug
+remotes/origin/24768_add_auth_page-revert-from-develop
+remotes/origin/24779_index_template_for_project_groups
+remotes/origin/24796_generate_index_template
+remotes/origin/25056_sort_data_json
+remotes/origin/25081_clean_html
+remotes/origin/25115_add_filter_searchbar
+remotes/origin/HEAD -> origin/main
+remotes/origin/develop
+remotes/origin/main
+```
+### Créer une nouvelle branche
+`git checkout -b <my-branch-name>`
+>👇 A noter que c'est l'option **-b** qui permet de créer une nouvelle branch et que l'on est automatiquement switch dessus lors de sa création
+```js
+Switched to a new branch '<my-branch-name>'
+```  
+### Se déplacer dans les branches
+Local
+`git checkout <my-branch-name>`
+>👇 A noter que checkout s'exécute **sans** option
+```js
+Switched to branch '<my-branch-name>'
+```  
+Remote
+`Git Pull`
+`git checkout --track origin <my-branch-name>`
+>👇 A noter que c'est plutôt rare de vouloir récupérer une branche qui n'est pas au même niveau depuis le dépôt distant.
+```js
+Switched to branch '<my-branch-name>'
+```  
+### Supprimer une branche
+Local
+`git checkout <my-branch-name>`
+>👇 A noter que checkout s'exécute avec l'option **-d**
+```js
+Deleted branch <my-branch-name> (was f187012).
+```  
+Remote
+`git push origin --delete <my-branch-name>`
+>☝️ UNIQUEMENT dans le cas ou l'on push une branche qu'on ne voulait pas envoyer sur le dépôt distant !
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
