@@ -148,6 +148,9 @@ Remote
 Après avoir fait votre commit final sur votre `<my-branch-feature>`   
 `git pull` => MAJ du dépôt  
 `git push origin develop` => Envoi sur le dépôt distant  
-Aller sur le dépôt distant Azure et cliquer dans le sous menu Pull Requests ![Pull Requests](./images/pull-request.PNG "Pull requests Azure")   
-Choisir un titre (obligatoire)  
-Séléctionner la branch à merge dans la branch `develop`  
+Aller sur le dépôt distant Azure et cliquer dans le sous menu Pull Requests  
+
+![Pull Requests](./images/pull-request.PNG "Pull requests Azure")   
+- Séléctionner la branch à merge dans la branch `develop`  
+- Choisir un titre (obligatoire)
+- etc...
