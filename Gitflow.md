@@ -1,5 +1,10 @@
 # Git FLow
-## Commandes générales Git
+
+## Installer Git 
+
+à faire
+
+## CLI Git
 
 ### Récupérer un dépôt distant
 `git clone <my-url-project>`
@@ -152,5 +157,5 @@ Aller sur le dépôt distant Azure et cliquer dans le sous menu Pull Requests
 
 ![Pull Requests](./images/pull-request.PNG "Pull requests Azure")   
 - Séléctionner la branch à merge dans la branch `develop`  
-- Choisir un titre (obligatoire)
+- Choisir un titre (obligatoire) : add <branch-name> to develop
 - etc...
